@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-brand-base: #F5F0E8;
+  --color-brand-green: #2D5016;
+  --color-brand-gold: #C4853A;
+  --color-brand-text: #1A1A14;
+  --color-brand-soft: #6B6B5A;
+  --color-brand-dark: #1A1710;
+}
+
+/* Custom scrollbars and focus rings */
+::selection {
+  background-color: var(--color-brand-gold);
+  color: white;
+}
+
+/* Scroll smooth for landing sections */
+html {
+  scroll-behavior: smooth;
+  background-color: #F5F0E8;
+}
+
+/* Custom animations and styling helpers */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}

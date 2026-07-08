@@ -1,0 +1,6 @@
+{
+  "name": "Cocina Inteligente",
+  "description": "Página de ventas de Cocina Inteligente con recetas saludables, sistema de congelado y bonos exclusivos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
