@@ -29,7 +29,6 @@ import {
   Plan 
 } from './data/landingData';
 import Toast from './components/Toast';
-import heroMealPrep from './assets/images/hero_meal_prep_1783385436603.webp';
 
 const CheckoutModal = lazy(() => import('./components/CheckoutModal'));
 const ClientPortal = lazy(() => import('./components/ClientPortal'));
@@ -234,7 +233,7 @@ export default function App() {
           <div className="lg:col-span-5 relative">
             <div className="relative w-full aspect-square md:max-w-md mx-auto overflow-hidden rounded bg-brand-gold/5 border border-brand-gold/10 shadow-lg">
               <img 
-                src={heroMealPrep} 
+                src="/hero_meal_prep.webp" 
                 alt="Mujer organizando contenedores de vidrio con comida fresca y saludable en una cocina iluminada" 
                 referrerPolicy="no-referrer"
                 width={500}
@@ -643,10 +642,10 @@ export default function App() {
 
                 {/* Bonos no incluidos */}
                 <div className="space-y-2 pt-2">
-                  <span className="text-[10px] uppercase font-bold text-brand-soft/40 tracking-widest block">BONOS EXTRA:</span>
-                  <p className="text-xs text-brand-soft/40 italic line-through">— Planificador de Menú Semanal</p>
-                  <p className="text-xs text-brand-soft/40 italic line-through">— Guía de Gestión del Congelador</p>
-                  <p className="text-xs text-brand-soft/40 italic line-through">— Plan de Viandas Organizadas</p>
+                  <span className="text-[10px] uppercase font-bold text-brand-soft/65 tracking-widest block">BONOS EXTRA:</span>
+                  <p className="text-xs text-brand-soft/65 italic line-through">— Planificador de Menú Semanal</p>
+                  <p className="text-xs text-brand-soft/65 italic line-through">— Guía de Gestión del Congelador</p>
+                  <p className="text-xs text-brand-soft/65 italic line-through">— Plan de Viandas Organizadas</p>
                 </div>
               </div>
 
