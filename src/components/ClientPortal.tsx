@@ -336,6 +336,10 @@ export default function ClientPortal({ userName, userEmail, userPlan, onLogout, 
                         src={recipe.image} 
                         alt={recipe.title}
                         referrerPolicy="no-referrer"
+                        width={300}
+                        height={200}
+                        loading="lazy"
+                        decoding="async"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                       <span className="absolute top-3 left-3 bg-brand-green text-white text-[9px] uppercase font-bold px-2 py-1 tracking-wider rounded">
@@ -402,6 +406,10 @@ export default function ClientPortal({ userName, userEmail, userPlan, onLogout, 
                   src={selectedRecipe.image} 
                   alt={selectedRecipe.title}
                   referrerPolicy="no-referrer"
+                  width={400}
+                  height={300}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -784,6 +792,10 @@ export default function ClientPortal({ userName, userEmail, userPlan, onLogout, 
                             <img 
                               src="https://i.postimg.cc/7hnGDLwP/Mockup-Planificador-Semanal.webp" 
                               alt="Bono 1: Planificador de Menú Semanal"
+                              width={240}
+                              height={320}
+                              loading="lazy"
+                              decoding="async"
                               className="h-full w-auto object-contain z-10 rounded shadow-sm hover:scale-105 transition-transform duration-300"
                               referrerPolicy="no-referrer"
                             />
@@ -795,6 +807,10 @@ export default function ClientPortal({ userName, userEmail, userPlan, onLogout, 
                             <img 
                               src="https://i.postimg.cc/fTXZVP9C/Mockup-Guia-Gestion-del-Congelador.webp" 
                               alt="Bono 2: Guía de Gestión del Congelador"
+                              width={240}
+                              height={320}
+                              loading="lazy"
+                              decoding="async"
                               className="h-full w-auto object-contain z-10 rounded shadow-sm hover:scale-105 transition-transform duration-300"
                               referrerPolicy="no-referrer"
                             />
@@ -806,6 +822,10 @@ export default function ClientPortal({ userName, userEmail, userPlan, onLogout, 
                             <img 
                               src="https://i.postimg.cc/g03G1TYr/Mockup-Guia-Plan-de-Viandas.webp" 
                               alt="Bono 3: Plan de Viandas Organizadas"
+                              width={240}
+                              height={320}
+                              loading="lazy"
+                              decoding="async"
                               className="h-full w-auto object-contain z-10 rounded shadow-sm hover:scale-105 transition-transform duration-300"
                               referrerPolicy="no-referrer"
                             />

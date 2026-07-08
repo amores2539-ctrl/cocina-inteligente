@@ -241,7 +241,7 @@ export const TESTIMONIALS: Testimonial[] = [
     id: 't1',
     name: 'Mariana Silva',
     city: 'Santiago de Chile',
-    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80',
+    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=80&h=80&q=60',
     rating: 5,
     text: 'Cocinar se había vuelto mi peor pesadilla al llegar cansada del trabajo. Ahora, dedico 2 horas el domingo y como espectacular toda la semana. ¡El sabor de las recetas congeladas es increíble, parece recién hecho!'
   },
@@ -249,7 +249,7 @@ export const TESTIMONIALS: Testimonial[] = [
     id: 't2',
     name: 'Andrés López',
     city: 'Bogotá, Colombia',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80',
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=80&h=80&q=60',
     rating: 5,
     text: 'He bajado mi gasto mensual en delivery a casi cero. No solo ahorro muchísimo dinero, sino que además como mucho más saludable. La técnica para congelar el arroz y las salsas me cambió la vida.'
   },
@@ -257,7 +257,7 @@ export const TESTIMONIALS: Testimonial[] = [
     id: 't3',
     name: 'Clara Domínguez',
     city: 'Lima, Perú',
-    avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&q=80',
+    avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=80&h=80&q=60',
     rating: 5,
     text: 'Lo que más me asustaba era que la comida quedara con sabor a freezer o aguada. Siguiendo los consejos de recipientes y tiempos, la textura queda perfecta. Mis hijos devoran las berenjenas gratinadas.'
   },
@@ -265,7 +265,7 @@ export const TESTIMONIALS: Testimonial[] = [
     id: 't4',
     name: 'Sofía Valenzuela',
     city: 'Quito, Ecuador',
-    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80',
+    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&h=80&q=60',
     rating: 5,
     text: 'Los bonos adicionales valen cada centavo. La guía de gestión del congelador la tengo pegada en la heladera y es mi consulta diaria. El planificador semanal interactivo es facilísimo de usar.'
   },
@@ -273,7 +273,7 @@ export const TESTIMONIALS: Testimonial[] = [
     id: 't5',
     name: 'Carlos Mendoza',
     city: 'Ciudad de México',
-    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80',
+    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=80&h=80&q=60',
     rating: 5,
     text: 'Como deportista necesito medir bien mis porciones de proteínas y carbohidratos. Con este sistema dejo listos 14 tuppers equilibrados en un solo domingo. Práctico, limpio y delicioso.'
   },
@@ -281,7 +281,7 @@ export const TESTIMONIALS: Testimonial[] = [
     id: 't6',
     name: 'Gabriela Ponce',
     city: 'Lima, Perú',
-    avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80',
+    avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=80&h=80&q=60',
     rating: 5,
     text: 'El sistema de porcionado y etiquetado es súper intuitivo. Antes encontraba tuppers misteriosos en el fondo del freezer y los tiraba; ahora tengo un inventario impecable y cero desperdicio.'
   }
@@ -328,43 +328,43 @@ export const FAQS: FAQItem[] = [
 
 export const GALLERY_IMAGES = [
   {
-    url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=400&h=400&q=80',
+    url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=250&h=250&q=60',
     title: 'Bowl de Pollo y Vegetales Rostizados'
   },
   {
-    url: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=400&h=400&q=80',
+    url: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=250&h=250&q=60',
     title: 'Super Ensalada Mediterránea con Garbanzos'
   },
   {
-    url: 'https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=400&h=400&q=80',
+    url: 'https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=250&h=250&q=60',
     title: 'Salmón Glaseado con Brócoli al Vapor'
   },
   {
-    url: 'https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=400&h=400&q=80',
+    url: 'https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=250&h=250&q=60',
     title: 'Tuppers de Meal Prep Semanal'
   },
   {
-    url: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=400&h=400&q=80',
+    url: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=250&h=250&q=60',
     title: 'Verduras Frescas Listas para Porcionar'
   },
   {
-    url: 'https://images.unsplash.com/photo-1506084868230-bb9d95c24759?auto=format&fit=crop&w=400&h=400&q=80',
+    url: 'https://images.unsplash.com/photo-1506084868230-bb9d95c24759?auto=format&fit=crop&w=250&h=250&q=60',
     title: 'Avena con Frutos Rojos en Frasco'
   },
   {
-    url: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=400&h=400&q=80',
+    url: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=250&h=250&q=60',
     title: 'Lasagna de Berenjenas Saludable'
   },
   {
-    url: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=400&h=400&q=80',
+    url: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=250&h=250&q=60',
     title: 'Curry de Garbanzos y Calabaza'
   },
   {
-    url: 'https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?auto=format&fit=crop&w=400&h=400&q=80',
+    url: 'https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?auto=format&fit=crop&w=250&h=250&q=60',
     title: 'Sopa Cremosa de Tomate Rostizado'
   },
   {
-    url: 'https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=400&h=400&q=80',
+    url: 'https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=250&h=250&q=60',
     title: 'Pancakes de Avena y Plátano'
   },
   {
@@ -372,7 +372,7 @@ export const GALLERY_IMAGES = [
     title: 'Hummus Clásico Casero en Frasco'
   },
   {
-    url: 'https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=400&h=400&q=80',
+    url: 'https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=250&h=250&q=60',
     title: 'Muffins de Huevo y Espinacas'
   }
 ];
@@ -405,7 +405,7 @@ export const RECIPES: Recipe[] = [
       'Enfriamiento: Deja enfriar a temperatura ambiente antes de fraccionar en tus contenedores de vidrio herméticos y congelar.'
     ],
     tips: 'A la hora de recalentar, añade un chorrito de agua o leche vegetal para recuperar la cremosidad original de la salsa.',
-    image: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=400&q=80',
+    image: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=300&h=300&q=60',
     isGlutenFree: true,
     isLactoseFree: true
   },
@@ -436,7 +436,7 @@ export const RECIPES: Recipe[] = [
       'Para congelar: Tapa herméticamente SIN hornear y guarda. El día de consumo, hornea directamente a 180°C durante 35 minutos.'
     ],
     tips: 'Secar muy bien el calabacín a la plancha es el secreto crucial para evitar que la lasagna suelte agua al descongelar.',
-    image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=400&q=80',
+    image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=300&h=300&q=60',
     isGlutenFree: true,
     isLactoseFree: false
   },
@@ -465,7 +465,7 @@ export const RECIPES: Recipe[] = [
       'Deja enfriar por completo, desmolda y colócalos en una bolsa hermética apta para freezer.'
     ],
     tips: 'Para consumir, envuelve un muffin congelado en una servilleta de papel y calienta en el microondas durante 40-50 segundos a potencia máxima.',
-    image: 'https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=400&q=80',
+    image: 'https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=300&h=300&q=60',
     isGlutenFree: true,
     isLactoseFree: true
   },
@@ -494,7 +494,7 @@ export const RECIPES: Recipe[] = [
       'Desmolda los cubitos congelados y guárdalos juntos en una bolsa con cierre hermético en el freezer.'
     ],
     tips: 'El jugo de limón es clave para evitar que el aguacate se oxide y se vuelva marrón al descongelar. Un cubito de este pesto sobre pasta caliente se derrite al instante creando una salsa divina.',
-    image: 'https://images.unsplash.com/photo-1496116211227-2d83764831f2?auto=format&fit=crop&w=400&q=80',
+    image: 'https://images.unsplash.com/photo-1496116211227-2d83764831f2?auto=format&fit=crop&w=300&h=300&q=60',
     isGlutenFree: true,
     isLactoseFree: true
   },
@@ -523,7 +523,7 @@ export const RECIPES: Recipe[] = [
       'Deja enfriar por completo antes de envasar herméticamente.'
     ],
     tips: 'Al recalentar, hazlo en una sartén muy caliente sin añadir aceite extra. Quedará crujiente y aromático.',
-    image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=400&q=80',
+    image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=300&h=300&q=60',
     isGlutenFree: false,
     isLactoseFree: true
   }

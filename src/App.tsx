@@ -172,7 +172,9 @@ export default function App() {
         </div>
       </nav>
 
-      {/* SECTION 1 — HERO */}
+      {/* MAIN CONTENT LANDMARK */}
+      <main className="flex-grow">
+        {/* SECTION 1 — HERO */}
       <section className="bg-brand-base py-12 md:py-20 px-6 md:px-12 max-w-7xl w-full mx-auto" id="hero-section">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
@@ -229,6 +231,11 @@ export default function App() {
                 src={heroMealPrep} 
                 alt="Mujer organizando contenedores de vidrio con comida fresca y saludable en una cocina iluminada" 
                 referrerPolicy="no-referrer"
+                width={500}
+                height={500}
+                fetchPriority="high"
+                decoding="sync"
+                loading="eager"
                 className="w-full h-full object-cover"
               />
               {/* Floating circular badge */}
@@ -292,16 +299,20 @@ export default function App() {
           {/* Left: Gallery 2x2 of realistic meal prep, sharp layout */}
           <div className="lg:col-span-5 grid grid-cols-2 gap-3" id="uvp-gallery-container">
             {[
-              { url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=350&h=350&q=80', alt: 'Ensalada fresca y colorida para meal prep' },
-              { url: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=350&h=350&q=80', alt: 'Bowl vegetariano balanceado en porciones' },
-              { url: 'https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=350&h=350&q=80', alt: 'Contenedores organizados de comida saludable' },
-              { url: 'https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=350&h=350&q=80', alt: 'Salmón glaseado con brócoli' }
+              { url: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=250&h=250&q=60', alt: 'Ensalada fresca y colorida para meal prep' },
+              { url: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=250&h=250&q=60', alt: 'Bowl vegetariano balanceado en porciones' },
+              { url: 'https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=250&h=250&q=60', alt: 'Contenedores organizados de comida saludable' },
+              { url: 'https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=250&h=250&q=60', alt: 'Salmón glaseado con brócoli' }
             ].map((img, idx) => (
               <div key={idx} className="aspect-square bg-white/5 overflow-hidden rounded shadow">
                 <img 
                   src={img.url} 
                   alt={img.alt} 
                   referrerPolicy="no-referrer"
+                  width={250}
+                  height={250}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" 
                 />
               </div>
@@ -433,6 +444,10 @@ export default function App() {
                   src={img.url} 
                   alt={img.title} 
                   referrerPolicy="no-referrer"
+                  width={250}
+                  height={250}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
                 />
                 {/* Subtle dark overlay hover */}
@@ -488,6 +503,10 @@ export default function App() {
                       <img 
                         src="https://i.postimg.cc/7hnGDLwP/Mockup-Planificador-Semanal.webp" 
                         alt="Bono 1: Planificador de Menú Semanal"
+                        width={240}
+                        height={320}
+                        loading="lazy"
+                        decoding="async"
                         className="h-full w-auto object-contain z-10 rounded shadow-sm hover:scale-105 transition-transform duration-300"
                         referrerPolicy="no-referrer"
                       />
@@ -495,6 +514,10 @@ export default function App() {
                       <img 
                         src="https://i.postimg.cc/fTXZVP9C/Mockup-Guia-Gestion-del-Congelador.webp" 
                         alt="Bono 2: Guía de Gestión del Congelador"
+                        width={240}
+                        height={320}
+                        loading="lazy"
+                        decoding="async"
                         className="h-full w-auto object-contain z-10 rounded shadow-sm hover:scale-105 transition-transform duration-300"
                         referrerPolicy="no-referrer"
                       />
@@ -502,6 +525,10 @@ export default function App() {
                       <img 
                         src="https://i.postimg.cc/g03G1TYr/Mockup-Guia-Plan-de-Viandas.webp" 
                         alt="Bono 3: Plan de Viandas Organizadas"
+                        width={240}
+                        height={320}
+                        loading="lazy"
+                        decoding="async"
                         className="h-full w-auto object-contain z-10 rounded shadow-sm hover:scale-105 transition-transform duration-300"
                         referrerPolicy="no-referrer"
                       />
@@ -542,6 +569,10 @@ export default function App() {
                 src="https://i.postimg.cc/0y9wZF7J/Banner-Premium-Cook-Zone-Hotmar-Club-(2).webp" 
                 alt="Banner Premium Cook Zone Hotmart Club"
                 referrerPolicy="no-referrer"
+                width={500}
+                height={380}
+                loading="lazy"
+                decoding="async"
                 className="max-h-full max-w-full object-contain hover:scale-105 transition-transform duration-300" 
               />
             </div>
@@ -730,6 +761,10 @@ export default function App() {
                     src={test.avatar} 
                     alt={test.name}
                     referrerPolicy="no-referrer"
+                    width={44}
+                    height={44}
+                    loading="lazy"
+                    decoding="async"
                     className="w-11 h-11 rounded-full object-cover border border-brand-gold/20" 
                   />
                   <div>
@@ -798,6 +833,8 @@ export default function App() {
 
         </div>
       </section>
+
+      </main>
 
       {/* SECTION 10 — FOOTER */}
       <footer className="bg-brand-dark text-white py-16 px-6 md:px-12 border-t border-brand-gold/10">
