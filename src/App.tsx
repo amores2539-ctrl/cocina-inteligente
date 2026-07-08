@@ -225,7 +225,7 @@ export default function App() {
           <div className="lg:col-span-5 relative">
             <div className="relative w-full aspect-square md:max-w-md mx-auto overflow-hidden rounded bg-brand-gold/5 border border-brand-gold/10 shadow-lg">
               <img 
-                src="/src/assets/images/hero_meal_prep_1783385436603.jpg" 
+                src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=800&q=80" 
                 alt="Mujer organizando contenedores de vidrio con comida fresca y saludable en una cocina iluminada" 
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover"
