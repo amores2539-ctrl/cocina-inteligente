@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, lazy, Suspense } from 'react';
 import { 
   Lock, 
   ShieldCheck, 
@@ -28,10 +28,11 @@ import {
   GALLERY_IMAGES, 
   Plan 
 } from './data/landingData';
-import CheckoutModal from './components/CheckoutModal';
-import ClientPortal from './components/ClientPortal';
 import Toast from './components/Toast';
-import heroMealPrep from './assets/images/hero_meal_prep_1783385436603.jpg';
+import heroMealPrep from './assets/images/hero_meal_prep_1783385436603.webp';
+
+const CheckoutModal = lazy(() => import('./components/CheckoutModal'));
+const ClientPortal = lazy(() => import('./components/ClientPortal'));
 
 export default function App() {
   // Authentication & State
@@ -137,7 +138,12 @@ export default function App() {
   // Switch between Landing Page and Client Portal
   if (isClientAreaOpen) {
     return (
-      <>
+      <Suspense fallback={
+        <div className="min-h-screen bg-brand-base flex flex-col items-center justify-center font-sans text-brand-soft gap-4 p-6 text-center">
+          <div className="w-8 h-8 border-4 border-brand-gold border-t-transparent rounded-full animate-spin"></div>
+          <p className="text-sm font-medium">Iniciando tu Portal de Cocina Inteligente...</p>
+        </div>
+      }>
         <ClientPortal 
           userName={userName}
           userEmail={userEmail}
@@ -150,7 +156,7 @@ export default function App() {
           isVisible={isToastVisible} 
           onClose={() => setIsToastVisible(false)} 
         />
-      </>
+      </Suspense>
     );
   }
 
@@ -891,12 +897,14 @@ export default function App() {
 
       {/* Checkout Modal */}
       {selectedPlanForCheckout && (
-        <CheckoutModal 
-          isOpen={isCheckoutOpen}
-          onClose={() => setIsCheckoutOpen(false)}
-          plan={selectedPlanForCheckout}
-          onSuccess={handleCheckoutSuccess}
-        />
+        <Suspense fallback={null}>
+          <CheckoutModal 
+            isOpen={isCheckoutOpen}
+            onClose={() => setIsCheckoutOpen(false)}
+            plan={selectedPlanForCheckout}
+            onSuccess={handleCheckoutSuccess}
+          />
+        </Suspense>
       )}
 
       {/* Floating Toast Notification */}
